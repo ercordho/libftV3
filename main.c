@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 12:24:53 by ercordho          #+#    #+#             */
-/*   Updated: 2021/09/23 12:37:02 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/04 16:34:55 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,10 @@
 
 int	main(void)
 {
-	char	*str;
+	char	**strs;
 
-	str = ft_strsub("coucou les amis", 0, ft_strlen("coucou les amis"));
-	ft_putendl((const char *)str);
-	ft_memdel((void **)&str);
-	free(str);
+	strs = ft_split(" cou cou les am is ", " ");
+	ft_putendls((const char **)strs);
+	ft_memdels((void **)&strs, (void **)strs);
 	return (0);
 }

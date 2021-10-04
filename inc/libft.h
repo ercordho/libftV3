@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 11:50:17 by ercordho          #+#    #+#             */
-/*   Updated: 2021/09/23 12:51:15 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/04 16:27:46 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,15 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <fcntl.h>
+
+# define PRINT_NRM		"\x1B[0m"
+# define PRINT_RED		"\x1B[31m"
+# define PRINT_GRN		"\x1B[32m"
+# define PRINT_YEL		"\x1B[33m"
+# define PRINT_BLU  	"\x1B[34m"
+# define PRINT_MAG		"\x1B[35m"
+# define PRINT_CYN		"\x1B[36m"
+# define PRINT_WHT		"\x1B[37m"
 
 /*
 **	GNL BUFFER
@@ -38,8 +47,7 @@ int			ft_isdigit(int c);
 void		*ft_memcpy(void *dst, const void *src, size_t n);
 void		ft_memdel(void **ptr);
 void		ft_memdels(void **ptr, void **content);
-void		*ft_memset(void *ptr, int c, size_t start, size_t end);
-void		*ft_memsetmalloc(int c, size_t len);
+void		*ft_memset(void *ptr, int c, size_t end);
 void		*ft_realloc(void *ptr, size_t n_size, size_t o_size);
 void		ft_swap(void *a, void *b);
 

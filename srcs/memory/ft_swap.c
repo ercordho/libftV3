@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 12:48:47 by ercordho          #+#    #+#             */
-/*   Updated: 2021/09/23 12:49:25 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/04 16:23:33 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_swap(void *a, void *b)
 {
 	void	*tmp;
 
-	tmp = ft_memsetmalloc('\0', 1);
+	tmp = (int *)malloc(sizeof(int) * 1);
 	if (tmp == NULL)
 		return ;
 	ft_memcpy(tmp, a, 1);
