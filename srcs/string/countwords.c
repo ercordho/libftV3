@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_countwords.c                                    :+:      :+:    :+:   */
+/*   countwords.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 17:13:25 by ercordho          #+#    #+#             */
-/*   Updated: 2021/09/23 12:10:39 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/04 17:22:33 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-int	ft_countwords(const char *str, const char *set)
+int	countwords(const char *str, const char *set)
 {
 	int	count;
 	int	ret;

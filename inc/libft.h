@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 11:50:17 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/04 16:27:46 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/04 17:22:44 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,7 @@ int			get_next_line(int file_descriptor, char **line);
 /*
 **	STRING
 */
-int			ft_countwords(const char *str, const char *set);
+int			countwords(const char *str, const char *set);
 char		**ft_split(const char *str, const char *set);
 char		*ft_strcat(char *dst, const char *src);	
 int			ft_strcmp(const char *s1, const char *s2);

@@ -6,7 +6,7 @@
 #    By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/23 12:03:01 by ercordho          #+#    #+#              #
-#    Updated: 2021/10/04 16:27:51 by ercordho         ###   ########.fr        #
+#    Updated: 2021/10/04 17:22:39 by ercordho         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS	=	srcs/ascii/ft_isalnum.c \
 			\
 			srcs/read/get_next_line.c \
 			\
-			srcs/string/ft_countwords.c \
+			srcs/string/countwords.c \
 			srcs/string/ft_split.c \
 			srcs/string/ft_strcat.c \
 			srcs/string/ft_strcmp.c \

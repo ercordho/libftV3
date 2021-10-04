@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 14:18:29 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/04 16:29:52 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/10/04 17:22:47 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,9 +45,9 @@ static char	*split_copy_word(const char *str, const char *set)
 	if (len == 0)
 		return (NULL);
 	n_str = (char *)malloc(sizeof(char ) * (len + 1));
+	n_str = (char *)ft_memset((void *)n_str, '\0', len + 1);
 	if (n_str == NULL)
 		return (NULL);
-	n_str = (char *)ft_memset((void *)n_str, '\0', len + 1);
 	i = 0;
 	while (*str && ft_ischarset(set, *str) == -1)
 		n_str[i++] = *str++;
@@ -60,7 +60,7 @@ char	**ft_split(const char *str, const char *set)
 	char	**strs;
 	int		y;
 
-	count_words = ft_countwords(str, set);
+	count_words = countwords(str, set);
 	if (count_words == 0)
 		return (NULL);
 	strs = (char **)malloc(sizeof(char *) * (count_words + 1));
