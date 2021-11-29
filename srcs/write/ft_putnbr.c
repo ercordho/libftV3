@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/15 02:46:58 by ercordho          #+#    #+#             */
-/*   Updated: 2021/09/23 11:59:04 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/11/29 16:24:21 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ size_t	ft_putnbr(long nbr)
 	static size_t	size = 0;
 
 	if (nbr == -2147483648)
-		ft_putstr("-2147483648");
-	else if (nbr < 0)
+		return (ft_putstr("-2147483648"));
+	if (nbr < 0)
 	{
 		ft_putchar('-');
 		ft_putnbr(nbr * -1);
