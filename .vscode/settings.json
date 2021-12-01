@@ -1,0 +1,7 @@
+{
+	"files.associations": {
+		"*.c": "c",
+		"*.json": "c",
+		"libft.h": "c"
+	}
+}
