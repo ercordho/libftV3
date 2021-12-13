@@ -6,7 +6,7 @@
 /*   By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/09/23 11:50:17 by ercordho          #+#    #+#             */
-/*   Updated: 2021/10/04 17:22:44 by ercordho         ###   ########.fr       */
+/*   Updated: 2021/12/13 16:00:41 by ercordho         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,10 @@
 # include <sys/types.h>
 # include <sys/stat.h>
 # include <fcntl.h>
+
+# ifndef __APPLE__
+#  define __APPLE__ 0
+# endif
 
 # define PRINT_NRM		"\x1B[0m"
 # define PRINT_RED		"\x1B[31m"
