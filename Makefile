@@ -6,7 +6,7 @@
 #    By: ercordho <ercordho@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/09/23 12:03:01 by ercordho          #+#    #+#              #
-#    Updated: 2021/12/01 23:49:01 by ercordho         ###   ########.fr        #
+#    Updated: 2021/12/18 01:31:26 by ercordho         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -58,4 +58,4 @@ clean			:
 fclean			:	clean
 					$(RM) $(NAME)
 re				:	fclean all
-.PHONY			:	all clean fclean re libft
+.PHONY			:	all clean fclean re
